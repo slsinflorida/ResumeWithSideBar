@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Ubuntu:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(99, 156, 156,.2);
+    height: 100vh;
+}
+
+/* intro */
+.content{
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(
+        -45deg, 
+        rgb(8, 53, 87,.3) 25%,
+        rgb(47, 152, 194,.3) 60%, 
+        rgb(173, 188, 195.3) 100%
+  ); 
+}
+
+.container h1{
+    margin: 20px;
+}
+
+.container p{
+    max-width: 600px;
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: large;
+}
+
+/* top */
+.mainNav{
+    margin-left: 60px;
+    padding: 10px 0 10px;
+    position: absolute;
+    right: 0;
+    top: 12px;
+}
+
+.mainNavList li{
+    display: inline;
+}
+
+.mainNavList li a{
+    margin-right: 20px;
+}
+
+.text{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.text:visited{
+    color: rgb(34, 31, 31);    
+}
+
+.topBanner{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(200, 238, 225);
+    width: 100vw;
+    height: 70px;
+}
+
+
+/* Side */
+.wrapBtn{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    outline: none;
+}
+
+.openBtn{
+    position: fixed;
+    top: 20px;
+    left: 10px;
+}
+
+.wrap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: transform 
+    .5s ease-in-out;
+}
+/* if the wrap has a visible property */
+.wrap.visible {
+    transform: translateX(0);
+}
+
+.wrapInner{
+    background-color: rgb(200, 238, 225);
+    width: 80%;
+    padding: 70px;
+    position: relative;
+    /* opacity: 95%; */
+}
+
+.closeBtn{
+    opacity: 0.4;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+}
+
+.list{
+    list-style-type: none;
+    padding: 0;
+}
+
+.list li, .mainNavList li{
+    margin: 20px 0;
+}
+
+.list li a, .mainNavList li a{
+    color: rgb(34, 31, 31S);
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.test{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin-top: 30px;
+}
+
+
+/* Resume specific */
+.containerResume{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    width: 80vw;
+    background-color: rgb(182, 207, 232,.9);
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    outline: auto;
+}
+
+.toggleBtn{
+    width: 70vw;
+    height: 7vh;
+    font-size: 1.5rem;
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    background-color: rgb(200, 238, 225);
+    color: rgb(9, 19, 28);
+}
+
+/* set toggle default to none */
+#one, #two, #three{
+    display: none;
+}
+
+
+/* Contact Specific*/
+#viewDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60vw;
+    height: 60vh;
+    margin: 30px;
+}
+
+#innerDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#contactInfo{
+    width: 60vw;
+    margin-top: 40px;
+    background-color: rgb(200, 238, 225);
+    padding: 10px;
+}
+
+
+
+

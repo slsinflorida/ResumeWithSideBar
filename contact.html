@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <title>Contact</title>
+
+<!-- map, has to be in header -->
+  <link rel="stylesheet" href="https://js.arcgis.com/4.23/esri/themes/light/main.css">
+  <script src="https://js.arcgis.com/4.23/"></script>
+
+  <script>
+    require(["esri/config","esri/Map", "esri/views/MapView"], function (esriConfig,Map, MapView) {
+        esriConfig.apiKey = "AAPK5ee200364ed84262acf43b5985212179BHOHiS6FtdOjwcHH6Wof7B7ABdj8VWA-WLcmQ_tVspC-kwT_c7l1QDTMr9HLJlpO";
+
+        const map = new Map({
+          basemap: "arcgis-topographic" // Basemap layer service
+        });
+
+        const view = new MapView({
+          map: map,
+          center: [-81.385262, 30.240005], // Longitude, latitude
+          zoom: 14, // Zoom level
+          container: "viewDiv" // Div element
+        });
+
+    });
+  </script>
+
+
+</head>
+<body>
+    <div class="outerDiv">
+
+        <div id="innerDiv">
+           
+    <!-- top -->
+    <div class="topBanner">
+        <div class="mainNav">
+            <ul class="mainNavList">
+                <li id="intro"><a href="index.html">Intro</a></li>
+                <li id="resume"><a href="resume.html">Resume</a></li>
+                <li id="contact"><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        </div>
+        
+            <!-- side -->
+            <button class="wrapBtn openBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        
+            <div class="wrap">
+                <div class="wrap wrapInner">
+                    <button class="wrapBtn closeBtn">
+                        <i class="fas fa-times"></i>
+                    </button>
+        
+                    <ul class="list">
+                        <li id="intro"><a href="index.html">Intro</a></li>
+                        <li id="resume"><a href="resume.html">Resume</a></li>
+                        <li id="contact"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="contactInfo">
+                <p><h2>Phone: </h2> 352-871-8371</p>
+                <p><h2>Email: </h2> slspontevedra@gmail.com</p>
+                <p><h2>LinkedIn</h2> <a href="https://www.linkedin.com/in/susanpontevedra">www.linkedin.com/in/susanpontevedra</a></p>
+            </div>
+
+            <!-- map -->
+            <div id="viewDiv"></div>
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+    
+</body>
+</html>

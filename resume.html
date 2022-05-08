@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <title>Resume</title>
+</head>
+<body>
+    <div class="outerDiv">
+   <!-- top -->
+   <div class="topBanner">
+    <div class="mainNav">
+        <ul class="mainNavList">
+            <li id="intro"><a href="index.html">Intro</a></li>
+            <li id="resume"><a href="resume.html">Resume</a></li>
+            <li id="contact"><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    </div>
+
+
+
+
+        <div class="test">
+            <div class="containerResume">
+                <div class="sections skills">
+                    <button class="toggleBtn" onclick= "toggleFirst()"> Skills</button>
+                    <div id="one">
+                        <ul class="list">
+                            <li><h3>JavaScript</h3></li>
+                            <li><h3>HTML</h3></li>
+                            <li><h3>CSS</h3></li>
+                            <li><h3>Visual Studio Code, Android Studio, IntelliJ</h3></li>
+                        </ul>
+                    </div>
+                </div>
+    
+    
+                <div class="sections employment">
+                    <button class="toggleBtn" onclick= "toggleSecond()"> Employment History</button>
+                    <div id="two">
+                        <ul class="list">
+                            <li><h3>Associate Forensic Examiner, Mulholland Forensics</h3> December 2021 - Present</li>
+                            <li><h3>Home Theater Field Agent/Delivery Driver, Best Buy</h3>August 2019 - December 2021</li>
+                            <li><h3>Senior Technical Support Adviser, Concentrix </h3>September 2018 - July 2019</li>
+                        </ul>
+                    </div>
+                </div>
+    
+    
+                <div class="sections education">
+                    <button class="toggleBtn" onclick= "toggleThird();"> Education</button>
+    
+                    <div id="three">
+                        <ul class="list">
+                            <li><h3>University of North Florida</h3> Graduation 2023</li>
+                            <li><h3>Santa Fe College</h3> Graduation 2016</li>
+                        </ul>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+
+      
+
+         <!-- side -->
+         <button class="wrapBtn openBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+    
+        <div class="wrap">
+            <div class="wrap wrapInner">
+                <button class="wrapBtn closeBtn">
+                    <i class="fas fa-times"></i>
+                </button>
+    
+                <ul class="list">
+                    <li id="intro"><a href="index.html">Intro</a></li>
+                    <li id="resume"><a href="resume.html">Resume</a></li>
+                    <li id="contact"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        
+
+    
+        
+    </div>
+    <script src="app.js"></script>
+
+</body>
+</html>
